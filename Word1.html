@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WordEase</title>
+        <style>
+    body {
+    font-family: 'Candara';
+    background :radial-gradient( #022d7cf2,  #a1dbf6ec);
+    background-size: 400% 400%;
+    color: rgb(4, 24, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+}
+
+    h2{
+    font-family: 'Candara';
+    }
+
+    header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    letter-spacing: 0.035rem;
+    }
+    .id {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 70%;
+      margin: auto;
+      text-align: center;
+    }
+    
+    .image-container {
+      background-color: #dbf6fc;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(71, 150, 219, 0.686);
+      padding: 25px;
+      width: 80%; /* Each image container takes 30% of the width */
+      margin: 20px;
+      cursor: pointer;
+      animation: fadeIn 1s ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .image-container:hover {
+      transform: translateY(-10px); /* Move image container up slightly on hover */
+      box-shadow: 0 8px 16px rgba(12, 56, 110, 0.558); /* Enhance shadow on hover */
+    }
+        </style> 
+    </head>
+
+    <body>
+      <header><b>WordEase</b></header>
+      
+        <section class="id">
+            <div class="image-container" onclick="selectFile()">
+                
+                <div class="description">
+                    <h2>Text Extraction</h2>
+                    <img src="wordsrc/book pen.png" alt="Text Extraction" class="image">
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+            </div>
+    
+            <div class="image-container" onclick="selectFile()">
+                
+                <div class="description">
+                    <h2>Merge PDFs</h2>
+                    <img src="wordsrc/layers.png" alt="Merge PDFs" class="image">
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+            </div>
+    
+            <div class="image-container" onclick="selectFile()">
+              
+              <div class="description">
+                  <h2>Word to PDF</h2>
+                  <img src="wordsrc/file3.png" alt="Word to PDFs" class="image">
+                  <input type="file" id="fileInput" style="display: none;">
+              </div>
+          </div>
+        </section>
+
+        <section class="id">
+          <div class="image-container" onclick="selectFile()">
+              
+            <div class="description">
+                <h2>Word to Excel</h2>
+                <img src="wordsrc/graph.png" alt="Word to Excel" class="image">
+                <input type="file" id="fileInput" style="display: none;">
+            </div>
+        </div>
+
+        <div class="image-container" onclick="selectFile()">
+              
+            <div class="description">
+                <h2>Search Text</h2>
+                <img src="wordsrc/find.png" alt="Search Text" class="image">
+                <input type="file" id="fileInput" style="display: none;">
+            </div>
+        </div>
+        
+        <div class="image-container" onclick="selectFile()">
+              
+            <div class="description">
+                <h2>Set Password</h2>
+                <img src="wordsrc/Secure.png" alt="Set Password" class="image">
+                <input type="file" id="fileInput" style="display: none;">
+            </div>
+        </div>
+        </section>
+      
+      <script src="word1.js"></script>
+    </body>
+    </html>
+    
